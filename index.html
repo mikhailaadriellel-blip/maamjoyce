@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, MA'AM JOYCE!</title>
+<style>
+body {
+background-color: #FAAA21;
+color: #FAAA21;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #642D0A;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #EC642A;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #FAAA21;
+}
+.button {
+background-color: #FAAA21;
+color: #642D0A;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.button:hover {
+background-color:#EC642A;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #642D0A;
+color: #FAAA21;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #EC642A;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: #FAAA21;
+color: #642D0A;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome ma'am Joyce!</h1>
+<p>October 5, 2026</p>
+<p>Click the button below</p>
+<button class="button" onclick="openLetter()">
+Open your surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+<center>
+<img src="raule.jpg" height="200" width="200">
+</center>
+<p>To our Research subject teacher and our coach,</p>
+<p>Being our Research teacher and HKISO coach, you've taught us more than just the different types of research, research design, funnel type research or prepare for a competition. You've taught us how to stay patient when things get difficult, how to keep going when we feel tired, and how to believe in what we're capable of.</p>
+<p>There were times na nakakapagod, nakaka-pressure, and nakaka-overwhelm po pero your guidance reminded us that every effort has a purpose. Every correction, reminder, and encouragement helped us grow. Not just as students, but as poeple who are learning to be stronger and more determined.</p>
+<p>We're so grateful po for every moment you spent helping us become better and for believing in us even when we sometimes doubted ourselves, loveu ma'am</p>
+<p>Happy Teacher's Day, ma'am!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
